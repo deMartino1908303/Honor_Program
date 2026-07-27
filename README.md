@@ -1,7 +1,3 @@
-# Honor_Program
-A method to derive news source reliability scores from a set of curated labels from a Common Crawl web network filtered to be of news sources
-
-
 # Web-Scale News Credibility Propagation: End-to-End Graph Construction, Continuous Label Propagation, and Deployment Architecture
 
 ## Abstract
