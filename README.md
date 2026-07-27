@@ -262,6 +262,5 @@ This project demonstrates an end-to-end scalable pipeline for web-wide news cred
 
 ### Future Directions
 - **Temporal Dynamics**: Extend propagation across multi-year Common Crawl releases (2017–2023) to analyze how domain credibility shifts over time.
-- **Graph Neural Networks (GNNs)**: Integrate structural domain embeddings (Node2Vec / GraphSAGE) with content-based language representations (BERT / Llama) to hybridize topological propagation with textual stance analysis.
 
 
