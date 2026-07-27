@@ -63,11 +63,11 @@ The network graph is extracted from multi-year Common Crawl Host Graph releases 
 
 ### 3.2 3-Hop Breadth-First Search (BFS) Traversal
 
-Starting from the seed node array $S = \{v_1, v_2, \dots, v_k\} \subset V$, we perform a multi-hop BFS wave expansion up to $h = 3$ hops.
+Starting from the seed node array $S = \{v_1, v_2, \dots, v_k\} \subset V$, we perform a multi hop BFS wave expansion up to $h = 3$ hops.
 
 #### Hub Capping & Reproducible Sampling
 Certain web vertices (e.g., major ad servers, CDN infrastructure, social sharing buttons) exhibit extreme out-degrees ($> 10,000$). Unchecked expansion through these hub nodes causes catastrophic graph explosion. To mitigate this:
-- **Degree Threshold ($\text{degree\_cap} = 5,000$)**: Nodes exceeding this out-degree trigger sampling.
+- **Degree Threshold ($\text{degree\_cap} = 5,000$)**: Nodes exceeding this out degree trigger sampling.
 - **Uniform Random Sampling**: A fixed pseudorandom number generator (`np.random.default_rng(seed=42)`) selects a representative sample of $\text{degree\_cap}$ outbound neighbors.
 
 #### Fast Vectorized Adjacency Construction
